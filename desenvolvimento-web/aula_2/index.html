@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<title>Exercícios HTML Form</title>
+<style>
+  /* Para organizar os checkboxes e radio buttons em linhas */
+  .linha {
+    display: inline-block;
+    margin-right: 10px;
+  }
+</style>
+</head>
+<body>
+
+<!-- /* Exercício 1 */ -->
+<form>
+  <label for="nome1">Nome:</label>
+  <input type="text" id="nome1" name="nome1"><br><br>
+
+  <label for="idade1">Idade:</label>
+  <input type="number" id="idade1" name="idade1" value="18"><br><br>
+
+  <button type="submit">Enviar</button>
+</form>
+<hr>
+
+<!-- /* Exercício 2 */ -->
+<form>
+  <label for="nome2">Nome:</label>
+  <input type="text" id="nome2" name="nome2"><br><br>
+
+  <label for="idade2">Idade:</label>
+  <input type="number" id="idade2" name="idade2" value="18" min="18" max="30"><br><br>
+
+  <button type="submit">Enviar</button>
+</form>
+<hr>
+
+<!-- /* Exercício 3 e 4 */ -->
+<form>
+  <label for="diaSelect">Escolha o dia:</label>
+  <select id="diaSelect" name="diaSelect">
+    <option value="segunda" selected>Segunda-feira</option>
+    <option value="terca">Terça-feira</option>
+    <option value="quarta">Quarta-feira</option>
+    <option value="quinta">Quinta-feira</option>
+    <option value="sexta">Sexta-feira</option>
+    <option value="sabado">Sábado</option>
+    <option value="domingo">Domingo</option>
+  </select>
+</form>
+<hr>
+
+<!-- /* Exercício 5 */ -->
+<form>
+  <label>Escolha o dia (Radio Buttons):</label><br>
+  <span class="linha"><input type="radio" name="diaRadio" value="segunda" checked>Segunda</span>
+  <span class="linha"><input type="radio" name="diaRadio" value="terca">Terça</span>
+  <span class="linha"><input type="radio" name="diaRadio" value="quarta">Quarta</span>
+  <span class="linha"><input type="radio" name="diaRadio" value="quinta">Quinta</span>
+  <span class="linha"><input type="radio" name="diaRadio" value="sexta">Sexta</span>
+  <span class="linha"><input type="radio" name="diaRadio" value="sabado">Sábado</span>
+  <span class="linha"><input type="radio" name="diaRadio" value="domingo">Domingo</span>
+</form>
+<hr>
+
+<!-- /* Exercício 6 */ -->
+<form>
+  <label>Escolha os dias (Checkboxes):</label><br>
+  <span class="linha"><input type="checkbox" name="diaCheck" value="segunda" checked>Segunda</span>
+  <span class="linha"><input type="checkbox" name="diaCheck" value="terca">Terça</span>
+  <span class="linha"><input type="checkbox" name="diaCheck" value="quarta">Quarta</span>
+  <span class="linha"><input type="checkbox" name="diaCheck" value="quinta" checked>Quinta</span>
+  <span class="linha"><input type="checkbox" name="diaCheck" value="sexta">Sexta</span>
+  <span class="linha"><input type="checkbox" name="diaCheck" value="sabado">Sábado</span>
+  <span class="linha"><input type="checkbox" name="diaCheck" value="domingo">Domingo</span>
+</form>
+<hr>
+
+<!-- /* Exercício 7 */ -->
+<form>
+  <fieldset>
+    <legend>Escolha os dias (Checkboxes em linhas)</legend>
+    <div><input type="checkbox" name="diaFieldset" value="segunda" checked>Segunda</div>
+    <div><input type="checkbox" name="diaFieldset" value="terca">Terça</div>
+    <div><input type="checkbox" name="diaFieldset" value="quarta">Quarta</div>
+    <div><input type="checkbox" name="diaFieldset" value="quinta" checked>Quinta</div>
+    <div><input type="checkbox" name="diaFieldset" value="sexta">Sexta</div>
+    <div><input type="checkbox" name="diaFieldset" value="sabado">Sábado</div>
+    <div><input type="checkbox" name="diaFieldset" value="domingo">Domingo</div>
+  </fieldset>
+</form>
+<hr>
+
+<!-- /* Exercício 8 */ -->
+<form>
+  <fieldset>
+    <div>
+      <label for="nome8">Seu nome:</label>
+      <input type="text" id="nome8" name="nome8">
+    </div>
+    <div>
+      <label for="comentarios">Seus comentários:</label>
+      <textarea id="comentarios" name="comentarios" rows="4" cols="30"></textarea>
+    </div>
+  </fieldset>
+  <br>
+  <button type="submit">Enviar</button>
+</form>
+<hr>
+
+<!-- /* Exercício 9 */ -->
+<form>
+  <fieldset>
+    <div>
+      <input type="text" id="nome9" name="nome9" placeholder="Seu nome">
+    </div>
+    <div>
+      <textarea id="comentarios9" name="comentarios9" rows="4" cols="30" placeholder="Seus comentários"></textarea>
+    </div>
+  </fieldset>
+  <br>
+  <button type="submit">Enviar</button>
+</form>
+<hr>
+
+<!-- /* Exercício 10 */ -->
+<form>
+  <div>
+    <input type="text" name="nome10" placeholder="Seu nome">
+    <input type="number" name="idade10" placeholder="Sua idade">
+    <input type="password" name="senha10" placeholder="Sua senha">
+    <input type="color" name="cor10" value="#ffff00">
+  </div>
+  <br>
+  <button type="submit">Enviar</button>
+</form>
+
+</body>
+</html>
