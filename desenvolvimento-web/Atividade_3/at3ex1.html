@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulário Geral</title>
+</head>
+<body>
+  <h1>Formulário Geral</h1>
+  <form>
+    <!-- Texto -->
+    <label>Nome: <input type="text" name="nome"></label><br><br>
+
+    <!-- Email -->
+    <label>Email: <input type="email" name="email"></label><br><br>
+
+    <!-- Senha -->
+    <label>Senha: <input type="password" name="senha"></label><br><br>
+
+    <!-- Número -->
+    <label>Idade: <input type="number" name="idade" min="1" max="120"></label><br><br>
+
+    <!-- Radio -->
+    Sexo: 
+    <input type="radio" name="sexo" value="M"> Masculino
+    <input type="radio" name="sexo" value="F"> Feminino<br><br>
+
+    <!-- Checkbox -->
+    Interesses:<br>
+    <input type="checkbox" name="interesse" value="tecnologia"> Tecnologia<br>
+    <input type="checkbox" name="interesse" value="esportes"> Esportes<br>
+    <input type="checkbox" name="interesse" value="musica"> Música<br><br>
+
+    <!-- Select -->
+    <label>Estado:
+      <select name="estado">
+        <option value="sp">São Paulo</option>
+        <option value="rj">Rio de Janeiro</option>
+        <option value="mg">Minas Gerais</option>
+      </select>
+    </label><br><br>
+
+    <!-- Data -->
+    <label>Data de Nascimento: <input type="date" name="nascimento"></label><br><br>
+
+    <!-- Arquivo -->
+    <label>Upload de Arquivo: <input type="file" name="arquivo"></label><br><br>
+
+    <!-- Área de texto -->
+    <label>Mensagem:<br>
+      <textarea name="mensagem" rows="4" cols="40"></textarea>
+    </label><br><br>
+
+    <!-- Botões -->
+    <button type="submit">Enviar</button>
+    <button type="reset">Limpar</button>
+  </form>
+</body>
+</html>

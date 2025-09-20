@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Agendamento de Reunião</title>
+</head>
+<body>
+  <h1>Agendar Reunião</h1>
+  <form>
+    <label>Data:
+      <input type="date" name="data" required>
+    </label><br><br>
+
+    <label>Horário:
+      <input type="time" name="hora" required>
+    </label><br><br>
+
+    <label>Tipo de Reunião:
+      <select name="tipo">
+        <option value="online" selected>Online</option>
+        <option value="presencial">Presencial</option>
+        <option value="telefone">Telefone</option>
+      </select>
+    </label><br><br>
+
+    <button type="submit">Confirmar</button>
+  </form>
+</body>
+</html>

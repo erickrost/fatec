@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Pedido de Produto</title>
+</head>
+<body>
+  <h1>Formulário de Pedido</h1>
+  <form>
+    <label>Nome do Produto:
+      <input type="text" name="produto" required>
+    </label><br><br>
+
+    <label>Quantidade:
+      <input type="number" name="quantidade" min="1" max="50" required>
+    </label><br><br>
+
+    <label>Forma de Pagamento:
+      <select name="pagamento">
+        <option value="cartao">Cartão de Crédito</option>
+        <option value="pix">PIX</option>
+        <option value="boleto">Boleto Bancário</option>
+      </select>
+    </label><br><br>
+
+    <label>
+      <input type="checkbox" name="termos" required> Aceito os termos de compra
+    </label><br><br>
+
+    <button type="submit">Finalizar Pedido</button>
+  </form>
+</body>
+</html>
